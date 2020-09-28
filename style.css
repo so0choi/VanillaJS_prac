@@ -1,15 +1,19 @@
 body {
-  background: #9e9e9e;
+  background: #ecf0f1;
 }
 h1 {
-  color: #cddc39;
+  color: #2980b9;
   transition: color 0.5s ease-in-out;
 }
 
-.btn {
-  cursor: pointer;
+.form {
+  display: none;
 }
 
-.color {
-  color: #e91e63;
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
