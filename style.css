@@ -7,6 +7,8 @@ body {
 
 .container {
   font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  text-shadow: 2px 2px 2px gray;
 }
 
 .center {
@@ -24,9 +26,9 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-.js-title {
-  color: whitesmoke;
+.title {
   transition: color 0.5s ease-in-out;
+  font-weight: 600;
 }
 
 .form {
@@ -35,10 +37,35 @@ body {
 
 .greetings {
   display: none;
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
 .showing {
   display: block;
+}
+
+.form--todo input {
+  margin-bottom: 10px;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(53, 53, 53);
+  font-size: 20px;
+}
+.form--todo input:focus {
+  outline: none;
+}
+
+.ul--todo-list li {
+  margin-bottom: 10px;
+}
+.ul--todo-list li button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -50,7 +77,6 @@ body {
   }
 }
 .bgImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   position: absolute;
   top: 0;
   left: 0;

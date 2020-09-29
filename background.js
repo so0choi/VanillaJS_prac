@@ -6,6 +6,7 @@ function handleImgLoad() {}
 
 function paintImage(imgNumber) {
   const img = new Image();
+  img.style = "linear-gradient = rgba(0, 0, 0, 0.3);";
   img.src = `./images/${imgNumber + 1}.jpg`;
   img.classList.add("bgImage");
   body.appendChild(img);
