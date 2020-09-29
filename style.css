@@ -1,8 +1,31 @@
 body {
-  background: #ecf0f1;
+  background: #30336b;
 }
-h1 {
-  color: #2980b9;
+
+.body {
+}
+
+.container {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.js-title {
+  color: whitesmoke;
   transition: color 0.5s ease-in-out;
 }
 
@@ -16,4 +39,24 @@ h1 {
 
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
