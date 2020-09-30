@@ -1,5 +1,4 @@
 const COORDS = "coords";
-const API_KEY = "920c384a44867e5643c8d0e97237be2c";
 const weather = document.querySelector(".js-weather");
 
 function paintWeather(temp, place) {

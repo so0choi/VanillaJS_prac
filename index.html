@@ -4,27 +4,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>VanillaJS-Small ToDo App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
     </head>
 
     <body>
-        <div class="container center">
-            <div class="js-clock">
-                <h1 class="js-title title">00:00</h1>
+        <div class="container">
+            <div class="div--weather">
+                <span class="js-weather weather"></span>
+            </div>
+            <div class="center">
+                <div class="js-clock">
+                    <h1 class="js-title title">00:00</h1>
+                </div>
                 <form class="js-form form">
-                    <input type="text" placeholder="What is your name?">
+                    <input type="text" class="input" placeholder="What is your name?">
                 </form>
-                <h4 class="js-greetings greetings"></h4>
+                <div class="greetings js-greetings">
+                </div>
                 <form class="js-toDoForm form--todo">
-                    <input type="text" placeholder="Write a to do">
+                    <input type="text" class="input" placeholder="Write a to do" required="required">
                 </form>
                 <ul class="js-toDoList ul--todo-list">
                 </ul>
-                <span class="js-weather"></span>
+
+
             </div>
         </div>
+        <script src="config.js"></script>
         <script src="background.js"></script>
         <script src="clock.js"></script>
         <script src="greeting.js"></script>

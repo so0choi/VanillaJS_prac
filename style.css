@@ -2,31 +2,29 @@ body {
   background: #30336b;
 }
 
-.body {
-}
-
 .container {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", Times, serif;
   color: #fff;
   text-shadow: 2px 2px 2px gray;
 }
 
 .center {
-  margin: 0;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  height: 50%;
+  background: rgba(116, 114, 114, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
 }
 
-.center h1 {
+.center .title {
   font-size: 50px;
   text-align: center;
   margin-bottom: 20px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.title {
   transition: color 0.5s ease-in-out;
   font-weight: 600;
 }
@@ -45,17 +43,44 @@ body {
   display: block;
 }
 
-.form--todo input {
+.input {
+  color: #fff;
   margin-bottom: 10px;
   background: none;
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid rgb(53, 53, 53);
+  border-bottom: 2px solid rgba(53, 53, 53, 0.34);
   font-size: 20px;
 }
-.form--todo input:focus {
+.input:focus {
   outline: none;
+}
+
+.ul--todo-list {
+  overflow: hidden scroll;
+  height: 45%;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .ul--todo-list li {
@@ -85,4 +110,11 @@ body {
   width: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.div--weather {
+  float: right;
+  font-size: 20px;
+  margin: 10px;
+  font-style: italic;
 }
